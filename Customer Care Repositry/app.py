@@ -9,9 +9,9 @@ import config
 # app config
 app = Flask(__name__)
 app.config['MYSQL_HOST'] = 'remotemysql.com'
-app.config['MYSQL_USER'] = 'KHn75lJxwU'
-app.config['MYSQL_PASSWORD'] = 'qxeSvaYU5D'
-app.config['MYSQL_DB'] = 'KHn75lJxwU'
+app.config['MYSQL_USER'] = ''
+app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_DB'] = ''
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USERNAME'] = config.email
@@ -271,15 +271,3 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0",port=8080)
 
 
-
-"""
-Username: KHn75lJxwU
-
-Database name: KHn75lJxwU
-
-Password: qxeSvaYU5D
-
-Server: remotemysql.com
-
-Port: 3306
-"""
