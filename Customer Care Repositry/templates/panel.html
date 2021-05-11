@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<br>
+<br>
+<br>
+<div class="container">
+    <div class="card">
+        <div class="container">
+            <header class="card-header">
+                <h3>Assign Tasks to Agents</h3>
+            </header>
+            <article class="card-body">
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>View</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for ticket in tickets %}
+                        <tr>
+                            <td>{{ ticket[3] }}</td>
+                            <td>{{ ticket[4] }}</td>
+                            <td><a href="/ticket/{{ticket[0]}}"><button class="btn btn-primary">View</button></a></td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </article>
+
+        </div>
+    </div>
+    <!---->
+    <br>
+    <br>
+    <div class="card">
+        <header class="card-header">
+            <h3>Make an Agent</h3>
+        </header>
+
+        <article class="card-body">
+            <form method="POST">
+                <div class="form-group">
+                    <select name="admin-candidate" class="">
+                        {% for user in all_users %}
+                        <option value="{{user[4]}}" class="">{{user[0]}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group mt-3">
+                    <input class="btn btn-info btn-sm" type="submit" value="Make Agent" />
+                </div>
+            </form>
+        </article>
+    </div>
+</div>
+{% endblock %}

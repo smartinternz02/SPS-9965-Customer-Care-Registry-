@@ -1,0 +1,28 @@
+body{
+    background-image: url('https://cdn.lynda.com/course/518163/518163-637491102860426021-16x9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.detail-card{
+    text-align: center;
+    margin-top:0.5em !important;
+    border-bottom: 1px black solid;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bl{
+    background-color: rgb(214, 234, 248) !important;
+}
+
+.yl{
+    background-color: rgb(191, 201, 202);
+}
+
+.gr{
+    background-color: rgb(214, 234, 248);
+}
